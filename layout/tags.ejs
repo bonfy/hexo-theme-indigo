@@ -13,9 +13,7 @@
         <% }) %>
             </div>
         <% } else {
-            site.tags.each(function(tag){
-                if(tag.length){
-            %>
+            site.tags.each(function(tag){  %>
 
             <h3 class="archive-separator" id="tag-<%=tag.name %>"><%=tag.name %></h3>
 
@@ -26,8 +24,7 @@
 
             <% }) %>
             </div>
-            <% }
-            })
+        <% })
         }
     %>
     <%- partial('_partial/paginator') %>

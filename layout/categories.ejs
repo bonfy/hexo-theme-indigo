@@ -13,9 +13,7 @@
         <% }) %>
             </div>
         <% } else {
-            site.categories.each(function(cate){
-                if(cate.length) {
-            %>
+            site.categories.each(function(cate){  %>
 
             <h3 class="archive-separator" id="tag-<%=cate.name %>"><%=cate.name %></h3>
 
@@ -25,9 +23,7 @@
                 <%- partial('_partial/archive', {post: post, date_format: 'MMM D, YYYY'}) %>
             <% }) %>
             </div>
-
-            <% }
-            })
+        <% })
         }
     %>
     <%- partial('_partial/paginator') %>
